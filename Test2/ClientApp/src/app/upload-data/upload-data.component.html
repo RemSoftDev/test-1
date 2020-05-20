@@ -1,0 +1,9 @@
+<h1 id="tableLabel">Upload</h1>
+
+<input type="file" name="files" ng2FileSelect [uploader]="uploader" />
+
+<button type="button" class="btn btn-success btn-s"
+        (click)="uploader.uploadAll()"
+        [disabled]="!uploader.getNotUploadedItems().length">
+  Upload
+</button>
